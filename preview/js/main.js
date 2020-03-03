@@ -33,7 +33,7 @@ renderer.setClearColor(0xffffff, 0);
 // renderer.setSize(window.innerWidth, window.innerHeight); //设置渲染器的宽高
 
 // !初始化太阳配置
-let sunMaterialSkin = new THREE.TextureLoader().load("../img/sunSkin.jpg");
+let sunMaterialSkin = new THREE.TextureLoader().load("./img/sunSkin.jpg");
 
 let geometry = new THREE.SphereGeometry(12, 16, 16);
 let material = new THREE.MeshBasicMaterial({
@@ -165,7 +165,7 @@ function displayPlanetName() {
   let loader = new THREE.FontLoader();
 
   function nameConstructor(name, volume) {
-    loader.load("../lib/helvetiker_regular.typeface.json", function(font) {
+    loader.load("./lib/helvetiker_regular.typeface.json", function(font) {
       console.log("font", font);
       let geometry = new THREE.TextGeometry(name, {
         font: font,
